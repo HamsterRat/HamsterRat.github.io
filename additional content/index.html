@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-    <html>
 <head>
     <title>Make an Impact</title>
 </head>
@@ -10,10 +9,10 @@
 
     <form action="/submit-page" method="POST">
         <label for="name">Organization Name:</label>
-        <input type="text" id="username" name="username" placeholder="Enter username"><br><br>
+        <input type="text" id="username" name="username" placeholder="Enter organization"><br><br>
         
         <label for="password">Person hosting:</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter full name"><br><br>
 
         <label for="message">Event Description:</label>
        <textarea id="message" name="user_explanation" rows="5" cols="50"></textarea>
@@ -24,44 +23,41 @@
         <br>
 
         <label for="password">Why should this be included?</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter text"><br><br>
         
         <button type="submit">Submit</button>
     </form>
-<head>
-    <title>Simple Form</title>
-</head>
+
 <body>
 
 <h1>Need some volunteer opportunities? Fill this out so we can send you opportunties weekly from local organzations :D</h1>
 
 <form action="/submit-page" method="POST">
     <label for="name">Enter in your email:</label>
-    <input type="text" id="name" name="user_name" placeholder="Enter your name">
+    <input type="text" id="name" name="user_name" placeholder="Enter your email">
     <br>
     <label for="email">Enter in your phone number:</label>
-    <input type="text" id="email" name="user_email" placeholder="Enter your email">
+    <input type="text" id="email" name="user_email" placeholder="Enter your number">
     <br>
     <p>Select what type of volunteer opportunities you'd like to receive:</p>
   <div>
-    <input type="checkbox" id="catergory1" name="sports" value="" />
-    <label for="sport1">Soccer</label>
+    <input type="checkbox" id="category1" name="volunteers" value="env" />
+    <label for="volunteer1">Environmental</label>
   </div>
   <div>
-    <input type="checkbox" id="sport2" name="sports" value="tennis" checked />
-    <label for="sport2">Tennis</label>
+    <input type="checkbox" id="category2" name="volunteers" value="social" checked />
+    <label for="volunteer2">Social Impact eg: youth, elderly, education</label>
   </div>
   <div>
-    <input type="checkbox" id="sport3" name="sports" value="basketball" />
-    <label for="sport3">Basketball</label>
+    <input type="checkbox" id="category3" name="volunteers" value="virt" />
+    <label for="volunteer3">Virtual</label>
+  </div>
+  <div>
+    <input type="checkbox" id="category4" name="volunteers" value="health" />
+    <label for="volunteer4">Healthcare: must be verfied with volunteer organizer for eligibility</label>
   </div>
     <br>
     <button type="submit">Send Me Notifications!</button>
 </form>
-
-</body>
-</html>
-
-
 </body>
 </html>
