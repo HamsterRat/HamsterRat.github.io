@@ -5,26 +5,59 @@
 </head>
 <body>
 
-    <h2>Help out one of the organzations by planning an event!</h2>
+    <h2>Part of an Organization here locally? Host an event to spread the goodwill!</h2>
 
     <form action="/submit-page" method="POST">
-        <label for="name">Enter your email:</label>
-        <input type="text" id="username" name="username" placeholder="Enter username"><br><br>
+        <label for="name">Organization Name:</label>
+        <input type="text" id="username" name="username" placeholder="Enter organization"><br><br>
         
-        <label for="password">Enter the organization name:</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <label for="password">Person hosting:</label>
+        <input type="password" id="password" name="password" placeholder="Enter full name"><br><br>
 
-        <label for="password">What does this organization do?:</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <label for="message">Event Description:</label>
+       <textarea id="message" name="user_explanation" rows="5" cols="50"></textarea>
+        <br>
 
-        <label for="password">Provide an easy link for individuals to access the organization:</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <label for="message">Event Logistics (provide location, budget, etc):</label>
+       <textarea id="message" name="user_explanation" rows="5" cols="50"></textarea>
+        <br>
 
         <label for="password">Why should this be included?</label>
-        <input type="password" id="password" name="password" placeholder="Enter password"><br><br>
+        <input type="password" id="password" name="password" placeholder="Enter text"><br><br>
         
         <button type="submit">Submit</button>
     </form>
 
+<body>
+
+<h1>Need some volunteer opportunities? Fill this out so we can send you opportunties weekly from local organzations :D</h1>
+
+<form action="/submit-page" method="POST">
+    <label for="name">Enter in your email:</label>
+    <input type="text" id="name" name="user_name" placeholder="Enter your email">
+    <br>
+    <label for="email">Enter in your phone number:</label>
+    <input type="text" id="email" name="user_email" placeholder="Enter your number">
+    <br>
+    <p>Select what type of volunteer opportunities you'd like to receive:</p>
+  <div>
+    <input type="checkbox" id="category1" name="volunteers" value="env" />
+    <label for="volunteer1">Environmental</label>
+  </div>
+  <div>
+    <input type="checkbox" id="category2" name="volunteers" value="social" checked />
+    <label for="volunteer2">Social Impact eg: youth, elderly, education</label>
+  </div>
+  <div>
+    <input type="checkbox" id="category3" name="volunteers" value="virt" />
+    <label for="volunteer3">Virtual</label>
+  </div>
+  <div>
+    <input type="checkbox" id="category4" name="volunteers" value="health" />
+    <label for="volunteer4">Healthcare: must be verfied with volunteer organizer for eligibility</label>
+  </div>
+    <br>
+    <button type="submit">Send Me Notifications!</button>
+</form>
 </body>
 </html>
