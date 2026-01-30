@@ -1,0 +1,98 @@
+/* TOP NAV BAR */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 32px;
+  background-color: #e9f3ff;
+}
+
+/* Logo */
+.logo {
+  font-size: 1.3rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+}
+
+/* Right-side navigation */
+.right {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* Dropdown buttons */
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown span {
+  padding: 8px 14px;
+  display: inline-block;
+  white-space: nowrap;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  min-width: 200px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  z-index: 100;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content a {
+  display: block;
+  padding: 10px 14px;
+  text-decoration: none;
+  color: black;
+}
+
+.dropdown-content a:hover {
+  background-color: #f0f4ff;
+}
+.dropdown:hover > .dropdown-content {
+  display: block;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-container {
+  flex: 1; /* pushes footer down */
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between; /* This is the "magnet" that pushes them apart */
+  align-items: flex-start;
+  background-color: #e9f3ff;
+  padding: 40px;
+  margin-top: auto;
+  width: 100%;            /* Force it to span the whole page */
+  box-sizing: border-box; /* Ensures padding doesn't push it off-screen */
+}
+
+.right-footer {
+  display: flex; 
+  flex-direction: row;    /* Makes Categories, Impact, and About sit side-by-side */
+  gap: 60px;              /* Adds space between the columns */
+}
+
+.footer-item {
+  display: flex;
+  flex-direction: column; /* Keeps the links inside each group stacked vertically */
+}
