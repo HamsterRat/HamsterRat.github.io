@@ -71,32 +71,31 @@ body {
 }
 
 .page-container {
-  flex: 1; /* pushes footer down */
+  flex: 1; 
 }
 
 .footer {
   display: flex;
-  justify-content: space-between; /* This is the "magnet" that pushes them apart */
+  justify-content: space-between; 
   align-items: flex-start;
   background-color: #e9f3ff;
   padding: 40px;
   margin-top: auto;
-  width: 100%;            /* Force it to span the whole page */
-  box-sizing: border-box; /* Ensures padding doesn't push it off-screen */
+  width: 100%;            
+  box-sizing: border-box;
 }
 
 .right-footer {
   display: flex; 
-  flex-direction: row;    /* Makes Categories, Impact, and About sit side-by-side */
-  gap: 60px;              /* Adds space between the columns */
+  flex-direction: row;    
+  gap: 60px;              
 }
 
 .footer-item {
   display: flex;
-  flex-direction: column; /* Keeps the links inside each group stacked vertically */
+  flex-direction: column; 
 }
 
-/* About Page Styling */
 .about-section {
   max-width: 800px;
   margin: 60px auto; 
@@ -151,7 +150,6 @@ body {
   margin: 40px auto;
 }
 
-/* The Highlight Card */
 .highlight-card {
   background: #ffffff;
   border-left: 8px solid #b3d7ff; /* Brand color accent */
@@ -185,7 +183,7 @@ body {
 .read-more:hover {
   text-decoration: underline;
 }
-/* Centering the form on the page */
+
 .form-container {
   max-width: 600px;
   margin: 50px auto;
@@ -199,7 +197,6 @@ body {
   margin-bottom: 20px;
 }
 
-/* Styling the labels */
 .form-group label {
   display: block;
   font-weight: bold;
@@ -207,24 +204,23 @@ body {
   color: #333;
 }
 
-/* Styling inputs, selects, and textareas */
 input, select, textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
   border-radius: 6px;
-  box-sizing: border-box; /* Crucial for width alignment */
+  box-sizing: border-box; 
   font-family: inherit;
 }
 
-/* Focus effect (when you click in) */
+
 input:focus, textarea:focus {
   outline: none;
   border-color: #b3d7ff;
   box-shadow: 0 0 5px rgba(179, 215, 255, 0.5);
 }
 
-/* The Submit Button */
+
 .submit-btn {
   background-color: #007bff;
   color: white;
