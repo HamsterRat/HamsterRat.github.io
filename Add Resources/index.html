@@ -62,23 +62,42 @@
 </head>
 <body>
 
-<h1>Fill out this form to continue updating the resources available!</h1>
+<h1 style="text-align: center; color: #2d5a27; margin-top: 40px; padding: 0 20px;">
+  Fill out this form to continue updating the resources available!
+</h1>
 
-<form action="/submit-page" method="POST">
-    <label for="name">Name of Organization:</label>
-    <input type="text" id="name" name="organization_name" placeholder="Enter the name of the resource:">
-    <br>
-    <label for="site">Enter their website to display on the Hub:</label>
-    <input type="text" id="site" name="org_site" placeholder="Enter their website:">
-    <br>
-    <label for="phoneEmail">Enter in their phone number/email for contact:</label>
-    <input type="text" id="phoneEmail" name="phone_email" placeholder="Enter their number/email">
-    <br>
-    <label for="">What kind of organization are they and why should they be added to the Hub?:</label>
-    <textarea id="message" name="user_explanation" rows="5" cols="50"></textarea>
-    <br>
-    <button type="submit">Submit Form</button>
-</form>
+<div class="form-container">
+  <div class="form-card">
+    <div class="form-header">
+      <h2>Add a New Resource</h2>
+      <p>Help us grow our directory by sharing local organizations.</p>
+    </div>
+
+    <form action="/submit-page" method="POST">
+      <div class="form-group">
+        <label for="name">Name of Organization:</label>
+        <input type="text" id="name" name="organization_name" placeholder="Enter organization name">
+      </div>
+
+      <div class="form-group">
+        <label for="site">Website URL:</label>
+        <input type="text" id="site" name="org_site" placeholder="https://example.org">
+      </div>
+
+      <div class="form-group">
+        <label for="phoneEmail">Contact Phone or Email:</label>
+        <input type="text" id="phoneEmail" name="phone_email" placeholder="Phone number or email">
+      </div>
+
+      <div class="form-group">
+        <label for="message">Why should they be added to the Hub?</label>
+        <textarea id="message" name="user_explanation" rows="5" placeholder="Tell us about their mission..."></textarea>
+      </div>
+
+      <button type="submit" class="btn-primary">Submit Resource</button>
+    </form>
+  </div>
+</div>
   
 <footer class="footer">
   <div class="left-footer">
