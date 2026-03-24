@@ -1027,3 +1027,42 @@ input:focus, select:focus, textarea:focus {
   <script src="search-logic.js"></script>
 </body>
 </html>
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cat-card {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  padding: 30px;
+  width: 250px;
+  text-align: center;
+  text-decoration: none; /* Removes link underline */
+  color: #333;
+  transition: all 0.3s ease; /* This makes it "smooth" */
+  box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+.cat-card:hover {
+  transform: translateY(-10px); /* Lifts the card up */
+  border-color: #2d5a27;
+  box-shadow: 0 12px 20px rgba(0,0,0,0.1);
+}
+
+.cat-card .icon {
+  font-size: 40px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.cat-card h3 {
+  margin: 0 0 10px 0;
+  color: #2d5a27;
+}
