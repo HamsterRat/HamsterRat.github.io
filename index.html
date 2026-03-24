@@ -68,8 +68,23 @@
   <div class="hero-content">
     <h2 class="big-text">Empowering the City through the Internet</h2>
     <p class="description-text">Explore and contribute to our vast hub today. Charlotte would love your help.</p>
+
+    <div class="search-container">
+    <input type="search" id="user-search-input" placeholder="Search for food, health, jobs...">
+    <button type="button" onclick="executeSearch()">Search</button>
+  </div>
   </div>
 </section>
+<div id="search-results-area" style="display: none; padding: 50px; background-color: white;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <button onclick="closeSearch()" style="margin-bottom: 20px; cursor: pointer;">← Back to Home</button>
+    <h2>Results for: "<span id="search-term-display"></span>"</h2>
+    <hr>
+    <div id="results-list">
+      </div>
+  </div>
+</div>
+
 <footer class="footer">
   <div class="left-footer">
     <a href="index.html" class="logo">Helping Hands</a>

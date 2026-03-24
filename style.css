@@ -1010,3 +1010,20 @@ input:focus, select:focus, textarea:focus {
     font-size: 0.9rem;
     text-transform: uppercase;
 }
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Results - Helping Hands</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="results-section">
+    <h1>Search Results for: <span id="search-term"></span></h1>
+    <div id="results-container">
+        </div>
+  </section>
+
+  <script src="data.js"></script>
+  <script src="search-logic.js"></script>
+</body>
+</html>
