@@ -57,6 +57,7 @@
   </nav>
 </header>
 
+
 <section class="hero-slideshow">
   <div class="slides">
 <img src = "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29tbXVuaXR5fGVufDB8fDB8fHww">
@@ -70,11 +71,20 @@
     <p class="description-text">Explore and contribute to our vast hub today. Charlotte would love your help.</p>
 
     <div class="search-container">
+     <form action="https://www.google.com/search" method="GET" target="_blank" class="search-container">
+  <input type="hidden" name="sitesearch" value="yourusername.github.io/Helping-Hands">
     <input type="search" id="user-search-input" placeholder="Search for food, health, jobs...">
     <button type="button" onclick="executeSearch()">Search</button>
   </div>
   </div>
 </section>
+
+<section class="stat-bar">
+  <div class="stat-item"><strong>15+</strong><p>Resources Listed</p></div>
+  <div class="stat-item"><strong>12k</strong><p>Monthly Visitors</p></div>
+  <div class="stat-item"><strong>24/7</strong><p>Support Access</p></div>
+</section>
+
 <div id="search-results-area" style="display: none; padding: 50px; background-color: white;">
   <div style="max-width: 1000px; margin: 0 auto;">
     <button onclick="closeSearch()" style="margin-bottom: 20px; cursor: pointer;">← Back to Home</button>
@@ -84,7 +94,32 @@
       </div>
   </div>
 </div>
+<section class="faq-section" style="padding: 40px; max-width: 800px; margin: 0 auto;">
+  <h2 style="text-align: center;">Frequently Asked Questions</h2>
+  <details style="margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+    <summary style="font-weight: bold;">How do I add a new resource?</summary>
+    <p style="padding-top: 10px;">Click the "Add Resources" link in the navigation bar and fill out the form!</p>
+  </details>
+  <details style="margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+    <summary style="font-weight: bold;">Is this service free to use?</summary>
+    <p style="padding-top: 10px;">Yes, Helping Hands is a 100% free community project for Charlotte residents.</p>
+  </details>
+  
+    <details style="margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+    <summary style="font-weight: bold;">Is my personal information safe when I sign up?</summary>
+      <p>Absolutely. Helping Hands never sells your data to third parties. We only use it to keep you updated on community events. With the help of encryption, this is made possible.</p>
+    </details>
 
+    <details style="margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+    <summary style="font-weight: bold;">What if I find a resource that is no longer active?</summary>
+      <p>We want to maintain relevant resources to ensure a better Charlotte! Please use the "Report" button on the resource page or contact us via the About page so we can update our records immediately.</p>
+    </details>
+      <details style="margin-bottom: 15px; padding: 10px; border-bottom: 1px solid #eee; cursor: pointer;">
+    <summary style="font-weight: bold;">Can I host an event through Helping Hands?</summary>
+      <p>Yes! Navigate to "Make an Impact" and select "Host an Event." We provide the platform to help you recruit volunteers and spread the word to the Charlotte area.</p>
+    </details>
+  </div>
+</section>
 
 </section>
 <footer class="footer">
@@ -120,5 +155,6 @@
     </div>
 
   </div> </footer>
+  <script src="script.js"></script>
 </body>
 </html>

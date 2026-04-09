@@ -64,41 +64,50 @@
 <h1 style="text-align: center; color: #2d5a27; margin-top: 40px; padding: 0 20px;">
   Need some volunteer opportunities?
 </h1>
+
 <div class="form-container">
-<form action= "https://formspree.io/f/mqeyrllv"  method="POST" class="form-card"></form>
-  <form class="form-card">
+  <form action="https://formspree.io/f/mqeyrllv" method="POST" class="form-card">
+    
     <div class="form-header">
-      <p>Fill this out so we can send you opportunties weekly from local organzations.</p>
+      <p>Fill this out so we can send you opportunities weekly from local organizations.</p>
     </div>
 
-"https://formspree.io/f/mqeyrllv" 
-    <label for="name">Enter in your email:</label>
-    <input type="text" id="name" name="user_name" placeholder="Enter your email">
-    <br>
-    <label for="email">Enter in your phone number:</label>
-    <input type="text" id="email" name="user_email" placeholder="Enter your number">
-    <br>
-    <p>Select what type of volunteer opportunities you'd like to receive:</p>
-  <div>
-    <input type="checkbox" id="category1" name="volunteers" value="env" />
-    <label for="volunteer1">Environmental</label>
-  </div>
-  <div>
-    <input type="checkbox" id="category2" name="volunteers" value="social" checked />
-    <label for="volunteer2">Social Impact eg: youth, elderly, education</label>
-  </div>
-  <div>
-    <input type="checkbox" id="category3" name="volunteers" value="virt" />
-    <label for="volunteer3">Virtual</label>
-  </div>
-  <div>
-    <input type="checkbox" id="category4" name="volunteers" value="health" />
-    <label for="volunteer4">Healthcare: must be verfied with volunteer organizer for eligibility</label>
-  </div>
+    <label for="user-email">Enter in your email:</label>
+    <input type="email" id="user-email" name="email" placeholder="Enter your email" required>
+    
+    <br><br>
+
+    <label for="user-phone">Enter in your phone number:</label>
+    <input type="tel" id="user-phone" name="phone" placeholder="Enter your number">
+    
+    <br><br>
+
+    <p style="font-weight: bold;">Select what type of volunteer opportunities you'd like to receive:</p>
+    
+    <div>
+      <input type="checkbox" id="category1" name="interest_env" value="Environmental" />
+      <label for="category1">Environmental</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="category2" name="interest_social" value="Social Impact" checked />
+      <label for="category2">Social Impact eg: youth, elderly, education</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="category3" name="interest_virtual" value="Virtual" />
+      <label for="category3">Virtual</label>
+    </div>
+    
+    <div>
+      <input type="checkbox" id="category4" name="interest_health" value="Healthcare" />
+      <label for="category4">Healthcare: must be verified with volunteer organizer for eligibility</label>
+    </div>
+    
     <br>
     <button type="submit">Send Me Notifications!</button>
-</form>
-
+  </form>
+</div>
 </div> </div>
    </footer>
 <footer class="footer">
