@@ -2,7 +2,7 @@
  * Helping Hands - Main Site Logic
  * This script handles the internal search without interfering with the slideshow.
  */
-
+// hi
 document.addEventListener('DOMContentLoaded', () => {
     // 1. DATA: This acts as your "Search Index"
     const siteResources = [
