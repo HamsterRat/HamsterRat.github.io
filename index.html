@@ -71,11 +71,8 @@
     <p class="description-text">Explore and contribute to our vast hub today. Charlotte would love your help.</p>
 
    <div class="search-container">
-  <form action="https://www.google.com/search" method="GET" target="_blank">
-    <input type="hidden" name="as_sitesearch" value="hamsterrat.github.io">
-    
-    <input type="text" name="q" placeholder="Search for food, health, jobs..." required>
-    
+  <form onsubmit="handleSearch(event)">
+    <input type="text" id="search-input" placeholder="Search for food, health, jobs..." required>
     <button type="submit">Search</button>
   </form>
 </div>

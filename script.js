@@ -81,3 +81,14 @@ function closeSearch() {
     resultsArea.style.display = 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+function handleSearch(event) {
+  event.preventDefault();
+  const term = document.getElementById('search-input').value;
+  document.getElementById('search-results-area').style.display = 'block';
+  document.getElementById('search-term-display').textContent = term;
+  // Add your search logic here
+}
+
+function closeSearch() {
+  document.getElementById('search-results-area').style.display = 'none';
+}
