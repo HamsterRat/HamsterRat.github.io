@@ -333,17 +333,6 @@ input:focus, textarea:focus {
   100% { transform: translateX(0%); }
 }
 
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 10;
-  text-align: center;
-  color: white;
-  width: 80%;
-  pointer-events: none; /* Allows you to click "through" the text */
-}
 
 
 :root {
