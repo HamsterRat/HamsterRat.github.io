@@ -2,7 +2,6 @@
  * Helping Hands - Main Site Logic
  * This script handles the internal search without interfering with the slideshow.
  */
-// hi
 document.addEventListener('DOMContentLoaded', () => {
     // 1. DATA: This acts as your "Search Index"
     const siteResources = [
@@ -14,30 +13,28 @@ document.addEventListener('DOMContentLoaded', () => {
     ];
 
     // 2. ELEMENTS: Getting the parts of the page we need
-    const searchInput = document.getElementById('user-search-input');
-    const searchBtn = document.querySelector('.search-container button');
+    const searchInput = document.getElementById('search-input');
+    const searchForm = document.querySelector('.search-container form');
     const resultsArea = document.getElementById('search-results-area');
     const resultsList = document.getElementById('results-list');
     const termDisplay = document.getElementById('search-term-display');
 
     // 3. THE SEARCH FUNCTION
-    function runInternalSearch() {
+    function runInternalSearch(event) {
+        event.preventDefault();
         const query = searchInput.value.toLowerCase().trim();
         
-        if (query === "") return; // Don't search for nothing!
+        if (query === "") return;
 
-        // Clear previous results
         resultsList.innerHTML = '';
         resultsArea.style.display = 'block';
         termDisplay.textContent = query;
 
-        // Filter through the resources array
         const filtered = siteResources.filter(item => {
             return item.title.toLowerCase().includes(query) || 
                    item.keywords.toLowerCase().includes(query);
         });
 
-        // Display results
         if (filtered.length > 0) {
             filtered.forEach(item => {
                 const resultItem = document.createElement('div');
@@ -57,38 +54,17 @@ document.addEventListener('DOMContentLoaded', () => {
             resultsList.innerHTML = `<p>No local resources found for "<strong>${query}</strong>". Try searching for "Food" or "Health".</p>`;
         }
 
-        // Smooth scroll to results
         resultsArea.scrollIntoView({ behavior: 'smooth' });
     }
 
-    // 4. LISTENERS: Trigger search on click or Enter key
-    if (searchBtn) {
-        searchBtn.addEventListener('click', runInternalSearch);
-    }
-
-    if (searchInput) {
-        searchInput.addEventListener('keypress', (e) => {
-            if (e.key === 'Enter') {
-                runInternalSearch();
-            }
-        });
+    // 4. LISTENERS: Trigger search on form submit
+    if (searchForm) {
+        searchForm.addEventListener('submit', runInternalSearch);
     }
 });
 
-// This stays outside the DOMContentLoaded so the 'onclick' in your HTML can find it
 function closeSearch() {
     const resultsArea = document.getElementById('search-results-area');
     resultsArea.style.display = 'none';
     window.scrollTo({ top: 0, behavior: 'smooth' });
-}
-function handleSearch(event) {
-  event.preventDefault();
-  const term = document.getElementById('search-input').value;
-  document.getElementById('search-results-area').style.display = 'block';
-  document.getElementById('search-term-display').textContent = term;
-  // Add your search logic here
-}
-
-function closeSearch() {
-  document.getElementById('search-results-area').style.display = 'none';
 }
