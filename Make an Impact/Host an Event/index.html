@@ -65,31 +65,36 @@
   Part of an organization here locally?
 </h1>
 <div class="form-container">
-<form action="https://formspree.io/f/mwvrgqnn" method="POST" class="form-card"></form>
-  <form class="form-card">
+  <form action="https://formspree.io/f/mwvrgqnn" method="POST" class="form-card">
+    
     <div class="form-header">
+      <h2 style="color: #2d5a27;">Host an Event</h2>
       <p>Host an event to spread the goodwill!</p>
     </div>
     
-        <label for="name">Organization Name:</label>
-        <input type="text" id="username" name="username" placeholder="Enter organization"><br><br>
+    <label for="org-name">Organization Name:</label><br>
+    <input type="text" id="org-name" name="organization" placeholder="Enter organization" required>
+    <br><br>
         
-        <label for="password">Person hosting:</label>
-        <input type="password" id="password" name="password" placeholder="Enter full name"><br><br>
+    <label for="host-name">Person Hosting:</label><br>
+    <input type="text" id="host-name" name="host_person" placeholder="Enter full name" required>
+    <br><br>
 
-        <label for="message">Event Description:</label>
-       <textarea id="message" name="user_explanation" rows="5" cols="50"></textarea>
-        <br>
+    <label for="description">Event Description:</label><br>
+    <textarea id="description" name="event_description" rows="5" style="width: 100%; border-radius: 5px; border: 1px solid #ccc;" placeholder="Describe your event..."></textarea>
+    <br><br>
 
-        <label for="message">Event Logistics (provide location, budget, etc):</label>
-       <textarea id="message" name="user_explanation" rows="5" cols="50"></textarea>
-        <br>
+    <label for="logistics">Event Logistics (location, budget, etc):</label><br>
+    <textarea id="logistics" name="event_logistics" rows="5" style="width: 100%; border-radius: 5px; border: 1px solid #ccc;" placeholder="Where and how?"></textarea>
+    <br><br>
 
-        <label for="password">Why should this be included?</label>
-        <input type="password" id="password" name="password" placeholder="Enter text"><br><br>
+    <label for="reason">Why should this be included?</label><br>
+    <input type="text" id="reason" name="inclusion_reason" placeholder="Enter text" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+    <br><br>
         
-        <button type="submit">Submit</button>
-    </form>
+    <button type="submit" class="submit-btn">Submit Event Proposal</button>
+  </form>
+</div>
   </div> </div>
    </footer>
 <footer class="footer">
